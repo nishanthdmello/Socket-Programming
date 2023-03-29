@@ -5,4 +5,4 @@ This repository consists of a server fille(server.py), a client file(client.py) 
 ## Contributors:
 1.  [Nishanth D'Mello](https://github.com/nishanthdmello)
 2.  [N Digvijay](https://github.com/ndigvijay)  
-3.  Nisank Arnav
+3.  [Melvin Joseph](https://github.com/melvinjjoseph)

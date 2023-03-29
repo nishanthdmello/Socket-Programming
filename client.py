@@ -5,17 +5,17 @@ from tkinter import *
 
 def send(list_of_absentees):
 
-    # Send the attendance data to the server
+    # Sending the attendance data to the server
     data = pickle.dumps(list_of_absentees)
     client_socket.send(data)
 
-    # Receive the server's response
+    # Receiving the server's response
     response = client_socket.recv(1024)
 
-    # Print the response
+    # Printing the response
     print(response.decode())
 
-    # Close the socket
+    # Closing the socket
     client_socket.close()
 
 
@@ -29,7 +29,7 @@ def submit():
     root.destroy()
 
 
-# Socket object created
+# Creating the socket object
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Getting local machine name and port number
@@ -39,7 +39,7 @@ port = 9999
 # Connecting to the server
 client_socket.connect((host, port))
 
-# Receiving the srns and unpickling it
+# Receiving the srn's and unpickling it
 data = client_socket.recv(1024)
 data = pickle.loads(data)
 

@@ -43,7 +43,6 @@ client_socket.connect((host, port))
 data = client_socket.recv(1024)
 data = pickle.loads(data)
 
-
 root = Tk()
 root.title("Attendance")
 root.geometry("200x200")
